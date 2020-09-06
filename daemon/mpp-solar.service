@@ -17,10 +17,7 @@ Environment=PYTHONUNBUFFERED=1
 
 # Automatically restart the service if it crashes
 Restart=always
-WatchdogSec=60
-
-# Our service will notify systemd once it is up and running
-Type=notify
+RuntimeMaxSec=7d
 
 # Use a dedicated user to run our service
 # User=mpp_service
